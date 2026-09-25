@@ -7,6 +7,7 @@ function Button({
   loading = false,
   icon,
   iconPosition = "left",
+  fullWidth,
   ariaLabel,
   children,
   onClick,
@@ -18,7 +19,7 @@ function Button({
   return (
     <button
       type={type}
-      className={`button button--${variant} button--${size} ${isIconOnly ? "button--icon-only" : ""}`}
+      className={`button button--${variant} button--${size} ${isIconOnly ? "button--icon-only" : ""} ${fullWidth ? "button--fullwidth" : ""}`}
       disabled={disabled || loading}
       aria-busy={loading ? "true" : undefined}
       aria-label={isIconOnly ? ariaLabel : undefined}

@@ -94,6 +94,10 @@
   aspect-ratio: 1/1;
 }
 
+.button--fullwidth {
+  width: 100%;
+}
+
 .spinner {
   display: inline-block;
   width: 16px;
