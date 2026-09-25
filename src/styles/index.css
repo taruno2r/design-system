@@ -331,8 +331,8 @@ code {
   background: var(--code-bg);
 }
 
-div {
-  margin: auto;
+#root {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 16px;
